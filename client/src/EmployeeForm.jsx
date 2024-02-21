@@ -39,7 +39,7 @@ const EmployeeForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/submit-form', formData);
+      await axios.post('https://empform-1.onrender.com/submit-form', formData);
       toast.success('Employee data submitted successfully!');
     } catch (error) {
       console.error('Error:', error);
